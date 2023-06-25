@@ -21,8 +21,10 @@ function TodoList() {
     };
     dispatch(addTodo(newTodo));
   }
+  
   return (
     <div>
+
       {todos.map((todo) => (
         <li key={todo.id}>
           {todo.id} | {todo.title} | {todo.description}
@@ -32,24 +34,21 @@ function TodoList() {
           </button>
         </li>
       ))}
+
       <div>
-        <input
-          type="text"
-          placeholder="Title"
-          aria-label="title"
-          value={newTodoTitle}
-          onChange={(e) => setNewTodoTitle(e.target.value)}
-        ></input>
-        <input
-          type="text"
-          placeholder="Description"
-          aria-label="description"
-          value={newTodoDescription}
-          onChange={(e) => setNewTodoDescription(e.target.value)}
-        ></input>
+      
+        <input type="text" placeholder="Title" aria-label="title" value={newTodoTitle}
+          onChange={(e) => setNewTodoTitle(e.target.value)}>
+        </input>
+      
+        <input type="text" placeholder="Description" aria-label="description" value={newTodoDescription}
+          onChange={(e) => setNewTodoDescription(e.target.value)}>
+        </input>
+      
         <button type="submit" className="btn" onClick={handleAddTodo}>
           Add
         </button>
+      
       </div>
     </div>
   );
