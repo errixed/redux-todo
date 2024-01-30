@@ -42,7 +42,7 @@ function TodoList() {
               <td>{todo.id}</td>
               <td>{todo.title}</td>
 
-              {todo.description === null ? (
+              {todo.description !== "" ? (
                 <td>{todo.description}</td>
               ) : (
                 <td>---</td>
