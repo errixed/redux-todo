@@ -16,6 +16,7 @@
 ## setups
 1. install <a href="https://nodejs.org/en">node.js</a> on your local machine
 2. install package.json by running below code in the root directory of project where package.json file exists
+   
 ```
 npm install
 ```
