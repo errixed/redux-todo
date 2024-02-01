@@ -14,7 +14,7 @@
 </div>
 
 ### React setups
-1. In the [frontend](https://github.com/errixed/auth0-spring-reactTS-security/tree/main/frontend) directory, run this code on terminal:
+ - Run this code on terminal:
 ```
 npm install
 ```
